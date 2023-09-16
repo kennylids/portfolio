@@ -40,7 +40,7 @@ const ComputersCanvas = () => {
   const isMobile = useMobileDetect();
   const containerStyle = {
     position: "absolute",
-    top: -50,
+    top: 0,
     left: 0,
     width: "100%",
     height: "100%",
