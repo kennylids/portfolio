@@ -10,3 +10,5 @@ git fetch --prune
 https://stackoverflow.com/questions/63964575/fatal-a-branch-named-gh-pages-already-exists
 
 npm install dotenv --legacy-peer-deps
+
+npm audit fix --legacy-peer-deps
