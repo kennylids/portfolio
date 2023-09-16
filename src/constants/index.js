@@ -243,7 +243,7 @@ const projects = [
       },
     ],
     image: logo,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/kennylids/portfolio",
   },
   {
     name: "FastAPI Backend",
