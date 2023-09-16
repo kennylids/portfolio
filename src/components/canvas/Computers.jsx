@@ -4,12 +4,19 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
+import mobileImage from "/src/assets/2d/cyberpunk_room.png";
+
+
+import useMobileDetect from "../useMobileDetect";
+
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./cyberpunk_micro-apartments/scene.gltf");
 
+
+
   return (
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor='black' />
+      <hemisphereLight intensity={0.15} groundColor="black" />
       <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
@@ -22,43 +29,44 @@ const Computers = ({ isMobile }) => {
       <primitive
         object={computer.scene}
         scale={0.5}
-        // scale={isMobile ? 2: 2}
-        position={isMobile ? [0, -3, -2.2] : [0, -1.5, 0]}
-        // rotation={[-0.01, -0.2, -0.1]}
-        rotation={[0,2, 0]}
-
+        position={[0, -1.5, 0]}
+        rotation={[0, 2, 0]}
       />
     </mesh>
   );
 };
 
 const ComputersCanvas = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  const isMobile = useMobileDetect();
+  const containerStyle = {
+    position: "absolute",
+    top: -50,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  };
 
-  useEffect(() => {
-    // Add a listener for changes to the screen size
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
+  const imageStyle = {
+    maxWidth: "200%",
+    maxHeight: "200%",
+  };
 
-    // Set the initial value of the `isMobile` state variable
-    setIsMobile(mediaQuery.matches);
+  if (isMobile) {
+    // Render the mobile image instead of the 3D component
+    return (
+      <div style={containerStyle}>
+        <img src={mobileImage} alt="Mobile Image" style={imageStyle} />
+      </div>
+    );
+  }
 
-    // Define a callback function to handle changes to the media query
-    const handleMediaQueryChange = (event) => {
-      setIsMobile(event.matches);
-    };
-
-    // Add the callback function as a listener for changes to the media query
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
-
-    // Remove the listener when the component is unmounted
-    return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
-    };
-  }, []);
-
+  
   return (
     <Canvas
-      frameloop='demand'
+      frameloop="demand"
       shadows
       dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}

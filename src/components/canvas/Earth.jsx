@@ -4,6 +4,10 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
+import useMobileDetect from "../useMobileDetect";
+import mobileImage from "/src/assets/2d/earth.png";
+
+
 const Earth = () => {
   const earth = useGLTF("./earthquakes/scene.gltf");
 
@@ -14,6 +18,32 @@ const Earth = () => {
 };
 
 const EarthCanvas = () => {
+
+  const isMobile = useMobileDetect();
+  const containerStyle = {
+    position: "absolute",
+    top: -50,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  };
+
+  const imageStyle = {
+    maxWidth: "300%",
+    maxHeight: "300%",
+  };
+  if (isMobile) {
+    return (
+      <div style={containerStyle}>
+        <img src={mobileImage} alt="Mobile Image" style={imageStyle} />
+      </div>
+    );
+  }
+
+
   return (
     <Canvas
       shadows
