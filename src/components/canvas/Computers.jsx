@@ -50,8 +50,10 @@ const ComputersCanvas = () => {
   };
 
   const imageStyle = {
-    maxWidth: "200%",
-    maxHeight: "200%",
+    // maxWidth: "200%",
+    // maxHeight: "200%",
+  // transform: "scale(1.8)"
+    
   };
 
   if (isMobile) {
