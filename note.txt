@@ -1,11 +1,9 @@
-npm install -D tailwindcss
+npm install --legacy-peer-deps three -D tailwindcss
 npx  tailwindcss init
 npm install --legacy-peer-deps @react-three/fiber @react-three/drei maath react-tilt react-vertical-timeline-component @emailjs/browser framer-motion react-router-dom
 npm install --legacy-peer-deps three
-
-npm uninstall --legacy-peer-deps react-router-dom@6
-
 npm install gh-pages --legacy-peer-deps --save-dev
+
 npm uninstall gh-pages --legacy-peer-deps --save-dev
 
 git fetch --prune
