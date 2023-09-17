@@ -8,16 +8,15 @@ import { Suspense, useEffect, useState } from "react";
 
 import useMobileDetect from "./useMobileDetect";
 
+import './index';
 
 const Tech = () => {
 
   const isMobile = useMobileDetect();
-
-
   return (
     <div className='flex flex-row flex-wrap justify-center gap-10'>
       {technologies.map((technology) => (
-        <div className='w-28 h-28' key={technology.name}>
+        <div className='w-28 h-28 technology-container' key={technology.name}>
           {/* Conditionally render the image if the device is mobile */}
           {isMobile ? (
             <img src={technology.icon} alt={technology.name} />

@@ -15,13 +15,13 @@ const Ball = (props) => {
   const randomSpeed = Math.random() * 2 + 0.5; // Adjust the range as desired
 
   return (
-    <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
+    <>
       <ambientLight intensity={0.25} />
       <directionalLight position={[0, 0, 0.05]} />
       <mesh castShadow receiveShadow scale={2.75}>
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
-          color='#fff8eb'
+          color="#fff8eb"
           polygonOffset
           polygonOffsetFactor={-5}
           flatShading
@@ -32,15 +32,8 @@ const Ball = (props) => {
           map={decal}
           flatShading
         />
-        {/* <Decal
-          position={[0, 0, -1]} // Position for the back decal
-          rotation={[Math.PI, 0, Math.PI]} // Rotation for the back decal
-          map={decal}
-          flatShading
-        /> */}
-
       </mesh>
-    </Float>
+    </>
   );
 };
 

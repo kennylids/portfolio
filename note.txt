@@ -16,3 +16,5 @@ npm install dotenv --legacy-peer-deps
 npm audit fix --legacy-peer-deps
 
 npm i --legacy-peer-deps
+
+npm uninstall react-spring --legacy-peer-deps
