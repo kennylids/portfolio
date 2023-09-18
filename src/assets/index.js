@@ -36,7 +36,6 @@ import pandas from "./tech/pandas.png";
 
 
 import polyu from "./company/polyu.png";
-import okx from "./company/okx.png";
 import apm from "./company/apm.png";
 import caton from "./company/caton.svg";
 
@@ -69,7 +68,7 @@ export {
   polyu,
   apm,
   caton,
-  okx,
+
   csharp, 
   dotnet, 
   fastapi, 
