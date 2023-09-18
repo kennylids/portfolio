@@ -167,8 +167,8 @@ const experiences = [
     date: "March 2022 - June 2022",
     points: [
       "Led research efforts on user profiling by utilizing Python to implement unsupervised machine learning models for user segmentation.",
-      "Sharing research with key department heads to deliver valuable insights.",
-      "Communicating with marketing and PR departments wiht relevant data to support decision-making processes and publish marketing materials.",
+      "Sharing research with key department heads to deliver valuable insights in product design.",
+      "Communicating with marketing departments with relevant data to support decision-making processes and marketing",
     ],
   },
   {
