@@ -28,6 +28,7 @@ import {
   polyu,
   apm,
   caton,
+  okx,
 
   eth,
 
@@ -159,11 +160,23 @@ const experiences = [
     ],
   },
   {
+    title: "Data Analyst",
+    company_name: "OKX",
+    icon: okx,
+    iconBg: "#FFFFFF",
+    date: "March 2022 - June 2022",
+    points: [
+      "Led research efforts on user profiling by utilizing Python to implement unsupervised machine learning models for user segmentation.",
+      "Sharing research with key department heads to deliver valuable insights.",
+      "Communicating with marketing and PR departments wiht relevant data to support decision-making processes and publish marketing materials.",
+    ],
+  },
+  {
     title: "Business Intelligence Engineer",
     company_name: "APM Monaco",
     icon: apm,
-    iconBg: "#E6DEDD",
-    date: "Aug 2021 - June 2022",
+    iconBg: "#FFFFFF",
+    date: "Aug 2021 - February 2022",
     points: [
       "Designing and developing advanced analytics on business operations, using SQL and PowerBI",
       "Replacing and improving data pipelies and quality of data infrastructure, in SSMS",
