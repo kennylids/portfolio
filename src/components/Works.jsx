@@ -17,8 +17,9 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
+    // <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <div>
+            <Tilt
         options={{
           max: 45,
           scale: 1,
@@ -63,26 +64,28 @@ const ProjectCard = ({
           ))}
         </div>
       </Tilt>
-    </motion.div>
+    </div>
+    //  </motion.div>
+
   );
 };
 
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      {/* <motion.div variants={textVariant()}> */}
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
-      </motion.div>
+      {/* </motion.div> */}
 
       <div className='w-full flex'>
-        <motion.p
+        {/* <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
-        >
+        > */}
         {project_sum[0].summary} 
           
-        </motion.p>
+        {/* </motion.p> */}
       </div>
 
       <div className='mt-20 flex flex-wrap gap-7'>
