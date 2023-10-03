@@ -18,11 +18,11 @@ const Tech = () => {
       {technologies.map((technology) => (
         <div className='w-28 h-28 technology-container' key={technology.name}>
           {/* Conditionally render the image if the device is mobile */}
-          {isMobile ? (
+          {/* {isMobile ? ( */}
             <img src={technology.icon} alt={technology.name} />
-          ) : (
+          {/* ) : (
             <BallCanvas icon={technology.icon} />
-          )}
+          )} */}
         </div>
       ))}
     </div>
