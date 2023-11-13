@@ -18,7 +18,10 @@ const ProjectCard = ({
 }) => {
   return (
     // <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-    <div>
+    <a href={source_code_link}>
+
+
+    <div > 
             <Tilt
         options={{
           max: 45,
@@ -65,7 +68,7 @@ const ProjectCard = ({
         </div>
       </Tilt>
     </div>
-    //  </motion.div>
+    </a>
 
   );
 };
