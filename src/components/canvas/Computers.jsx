@@ -56,7 +56,7 @@ const ComputersCanvas = () => {
     
   };
 
-  if (isMobile) {
+  if (1) {
     // Render the mobile image instead of the 3D component
     return (
       <div style={containerStyle}>

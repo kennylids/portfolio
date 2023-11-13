@@ -35,7 +35,7 @@ const EarthCanvas = () => {
     maxWidth: "300%",
     maxHeight: "300%",
   };
-  if (isMobile) {
+  if (1) {
     return (
       <div style={containerStyle}>
         <img src={mobileImage} alt="Mobile Image" style={imageStyle} />

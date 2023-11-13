@@ -18,3 +18,10 @@ npm audit fix --legacy-peer-deps
 npm i --legacy-peer-deps
 
 npm uninstall react-spring --legacy-peer-deps
+
+
+
+
+npm install --legacy-peer-deps @react-three/fiber @react-three/drei maath framer-motion react react-color react-dom three valtio
+
+npm install --legacy-peer-deps @react-three/fiber @react-three/drei maath framer-motion react react-color three valtio

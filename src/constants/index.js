@@ -33,7 +33,7 @@ import {
   eth,
 
   logo,
-  
+  bashfularts
 } from "../assets";
 
 export const navLinks = [
@@ -74,7 +74,7 @@ const services = [
 
 const intro = [
   {
-    text: "I'm a skilled software engineer with experience in ML and data engineering and expertise in languages like Python, SQL, React, and C#. I'm a quick learner and collaborate closely with clients to create efficient and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!"
+    text: "I'm a skilled software engineer with experience in ML and data engineering and expertise in languages like Python, SQL, React, Next.js and C#. I'm a quick learner and collaborate closely with clients to create efficient and user-friendly solutions. Let's work together to bring your ideas to life!"
   }
 ];
 
@@ -131,52 +131,54 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Software Engineer",
+    title: "Lead Engineer (Data)",
     company_name: "The Hong Kong Polytechnic Unversity",
     icon: polyu,
     iconBg: "#E6DEDD",
     date: "June 2023 - Present",
     points: [
-      "Developing and maintaining web applications and backend API using React.js, Python, FastAPI and other related technologies.",
-      "Designed and implemented automated and AI/data solutions.",
+      "Developing Next.js and FastAPI applications for service delivery and Open API initiatives on Docker, utilizing GitLab, Dockerfile, and OpenShift configurations.",
+      "Developing a FastAPI backend using Python, pydantic, SQLAlchemy, pyodbc running on uvicorn and deployed with Docker.",
+      "Writing Dockerfile and OpenShift configuration files to establish network configuration and system image setup, ensuring efficient and scalable deployment.",
+      "Creating C#, PowerShell, Python programs, and SQL stored procedures to automate tasks and streamline data pipelines.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Participating in code reviews and providing constructive feedback to other developers.",
-      "Defined and implemented streamlined team workflow standards, optimizing efficiency, collaboration, and software delivery.",
-      "Led and empowered a high-performing software engineering team, driving successful project outcomes through clear vision, collaboration, and agile methodologies.",
+      "Leading a high-performing software engineering team, driving successful project outcomes through clear vision, collaboration, and agile methodologies.",
     ],
   },
   {
-    title: "ML/Data Engineer",
+    title: "Data Engineer",
     company_name: "The Hong Kong Polytechnic Unversity",
     icon: polyu,
     iconBg: "#E6DEDD",
     date: "June 2022 - Present",
     points: [
-      "Developing ML models for T&L using LightGBM and Python.",
       "Builiding automation programs and data pipelines using SQL, C#, Python, Selenium, requests, Powershell and .NET.",
+      "Utilized Python, Selenium, and Requests libraries for web scraping, extracting data from educational websites to support analysis and integration into internal systems.",
       "Leading a team in data mining and building advanced analytics.",
+      "Developing ML models for T&L using LightGBM and Python.",
       "Designing and building full-stack applications and data management system.",
-      "Mentored and coached team members to enhance their technical skills, problem-solving abilities, and domain knowledge. Facilitated knowledge sharing and collaboration, enabling the team to leverage cutting-edge techniques and tools in data mining and analytics.",
+      "Coaching team members to enhance their technical skills, problem-solving abilities, and domain knowledge. Facilitated knowledge sharing and collaboration, enabling the team to leverage cutting-edge techniques and tools in data mining and analytics.",
     ],
   },
-  {
-    title: "Data Analyst",
-    company_name: "OKX",
-    icon: okx,
-    iconBg: "#FFFFFF",
-    date: "March 2022 - June 2022",
-    points: [
-      "Led research efforts on user profiling by utilizing Python to implement unsupervised machine learning models for user segmentation.",
-      "Sharing research with key department heads to deliver valuable insights in product design.",
-      "Communicating with marketing departments with relevant data to support decision-making processes and marketing",
-    ],
-  },
+  // {
+  //   title: "Data Analyst",
+  //   company_name: "OKX",
+  //   icon: okx,
+  //   iconBg: "#FFFFFF",
+  //   date: "March 2022 - June 2022",
+  //   points: [
+  //     "Led research efforts on user profiling by utilizing Python to implement unsupervised machine learning models for user segmentation.",
+  //     "Sharing research with key department heads to deliver valuable insights in product design.",
+  //     "Communicating with marketing departments with relevant data to support decision-making processes and marketing",
+  //   ],
+  // },
   {
     title: "Business Intelligence Engineer",
     company_name: "APM Monaco",
     icon: apm,
     iconBg: "#FFFFFF",
-    date: "Aug 2021 - February 2022",
+    date: "Aug 2021 - June 2022",
     points: [
       "Designing and developing advanced analytics on business operations, using SQL and PowerBI",
       "Replacing and improving data pipelies and quality of data infrastructure, in SSMS",
@@ -203,27 +205,19 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
+      "I thought it would take a long time to build a beautiful and functional e-commerce website, but Ken managed to build it for a couple of weeks and now the shop is online!",
+    name: "Teddy Apr",
     designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    company: "bashfulArts",
+    image: "https://eshop-jade.vercel.app/favicon.ico",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Great help in building fulfilment order automation. Saved me a lot of manual work.",
+    name: "Jason Pong",
+    designation: "CEO",
+    company: "WakeValley Hong Kong",
+    image: "https://pps.whatsapp.net/v/t61.24694-24/211766646_2955395458079414_6631635263188823136_n.jpg?ccb=11-4&oh=01_AdQnk5tXU0T9HOKwYf0_mMgYfD7HEMUcGoKjYGeMTbVj-w&oe=6554F10A&_nc_sid=e6ed6c&_nc_cat=103",
   },
 ];
 const project_sum = [
@@ -237,6 +231,28 @@ const project_sum = [
 ]
 
 const projects = [
+  {
+    name: "3D-powered Ecommerce website",
+    description:
+      "Next.js website powered with three.js to display and sell artful products online. ",
+    tags: [
+      {
+        name: "Next.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "three.js",
+        color: "green-text-gradient",
+      },
+      
+    ],
+    image: bashfularts,
+    source_code_link: "https://eshop-jade.vercel.app/",
+  },  
   {
     name: "React website",
     description:

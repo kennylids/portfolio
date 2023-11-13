@@ -1,4 +1,5 @@
 import logo from "./logo.svg";
+import bashfularts from "./bashfularts.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -45,6 +46,7 @@ import eth from "./eth.png";
 
 export {
   logo,
+  bashfularts,
   backend,
   creator,
   mobile,
