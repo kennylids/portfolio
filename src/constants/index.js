@@ -213,7 +213,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "Great help in building fulfilment order automation. Saved me a lot of manual work.",
+      "Great help in building fulfilment order automation integrating my company's database to third party API providers. Saved me a lot of manual work in uploading each order to SF express.",
     name: "Jason Pong",
     designation: "CEO",
     company: "WakeValley Hong Kong",
