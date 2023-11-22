@@ -33,7 +33,8 @@ import {
   eth,
 
   logo,
-  bashfularts
+  bashfularts,
+  celery
 } from "../assets";
 
 export const navLinks = [
@@ -231,6 +232,32 @@ const project_sum = [
 ]
 
 const projects = [
+  {
+    name: "Celery Backend with FastAPI",
+    description:
+      "Celery Backend with FastAPI is an asynchronous Python application that leverages redis and docker deployment.",
+    tags: [
+      {
+        name: "celery",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "fastapi",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "python",
+        color: "green-text-gradient",
+      },
+      {
+        name: "redis",
+        color: "orange-text-gradient",
+      },
+      
+    ],
+    image: celery,
+    source_code_link: "https://github.com/kennylids/fastapi-celery",
+  },  
   {
     name: "3D-powered Ecommerce website",
     description:
