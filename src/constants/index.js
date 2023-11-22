@@ -275,6 +275,10 @@ const projects = [
         name: "three.js",
         color: "green-text-gradient",
       },
+      {
+        name: "stripe.js",
+        color: "orange-text-gradient",
+      },
       
     ],
     image: bashfularts,
