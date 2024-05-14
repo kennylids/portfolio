@@ -132,15 +132,14 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Lead Engineer (Data)",
+    title: "Software Engineer (Data)",
     company_name: "The Hong Kong Polytechnic Unversity",
     icon: polyu,
     iconBg: "#E6DEDD",
-    date: "June 2023 - Present",
+    date: "June 2023 - June 2024",
     points: [
-      "Developing Next.js and FastAPI applications for service delivery and Open API initiatives on Docker, utilizing GitLab, Dockerfile, and OpenShift configurations.",
+      "Developing Next.js and FastAPI applications for service delivery and Open API initiatives on Docker and OpenShift.",
       "Developing a FastAPI backend using Python, pydantic, SQLAlchemy, pyodbc running on uvicorn and deployed with Docker.",
-      "Writing Dockerfile and OpenShift configuration files to establish network configuration and system image setup, ensuring efficient and scalable deployment.",
       "Creating C#, PowerShell, Python programs, and SQL stored procedures to automate tasks and streamline data pipelines.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Participating in code reviews and providing constructive feedback to other developers.",
@@ -148,14 +147,13 @@ const experiences = [
     ],
   },
   {
-    title: "Data Engineer",
+    title: "Data & ML Engineer",
     company_name: "The Hong Kong Polytechnic Unversity",
     icon: polyu,
     iconBg: "#E6DEDD",
-    date: "June 2022 - Present",
+    date: "June 2022 - June 2024",
     points: [
       "Builiding automation programs and data pipelines using SQL, C#, Python, Selenium, requests, Powershell and .NET.",
-      "Utilized Python, Selenium, and Requests libraries for web scraping, extracting data from educational websites to support analysis and integration into internal systems.",
       "Leading a team in data mining and building advanced analytics.",
       "Developing ML models for T&L using LightGBM and Python.",
       "Designing and building full-stack applications and data management system.",
